@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: #fff;
+}
+h2,h3{
+    color: #208CFF;
+}
+.principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height:850px;
+    position: relative;
+    margin-top: 17px;
+    background-color: #edebe9;
+    border-radius: 10px;
+    box-shadow: 17px 34px 60px -21px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 17px 34px 60px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 34px 60px -21px rgba(0,0,0,0.75);
+}
+ header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+header nav{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #208CFF;
+    width: 50px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+header nav:hover{
+    width: 150px;
+    
+}
+header nav:hover > ul li:first-child::after{
+    content: " Portfolio";
+    color: #eee;
+    
+}
+header nav:hover > ul li:nth-child(2)::after{
+    content: " CV";
+    color: #eee;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color : rgba(238, 238, 238, 0.685);
+    transition: all 0.4s ease;
+    
+}
+header nav ul li a:hover{
+    color: #fff
+}
+hr{
+    border: 1px solid  rgba(119, 151, 238, 0.685);
+}
+.img-container{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 20px;
+    grid-column: 2/3;
+    transition: all 0.4s ease;
+}
+.estudios-container  a{
+    color: #000;
+    text-decoration: none;
+}
+.img-container img{
+    width: 100%;
+}
+.contact-info-container{
+    padding: 0 0 50px 50px;
+    margin-top: 10px;
+    
+}
+.contact-info-container .social-media-links{
+    display: flex;
+    gap: 25px;
+    padding: 10px 0;
+}
+.contact-info-container .social-media-links a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 3px solid #edebe9;
+    transition: border 0.4s
+}
+.contact-info-container .social-media-links a:hover{
+    border-bottom: 3px solid #208CFF;
+}
+.main-curriculum{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+}
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 250px;
+    margin-top: 20px;
+}
+.frameworks-librerias{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+.estudios-container{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    
+    padding: 20px 0 0 20px;
+}
+.estudios-container a{
+    
+    background-color: #208cffa9;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 7px 0;  
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.estudios-container a:hover{
+    background-color: #208CFF;
+    
+}
+.estudios-container a i{
+    color: #efb810;
+}
+.fa-python{
+    color:#0459b4;
+}
+.fa-html5{
+    color: rgb(250, 41, 41);
+}
+.fa-css3-alt{
+    color: #017cff;
+}
+.fa-square-js{
+    color: #ffbf00;
+}
+.fa-java{
+    color: #017cff;
+}
+.fa-linkedin{
+    color: #0a66c2;
+}
+.fa-react{
+    color: #5ed3f3;
+}
+.main-curriculum h1{
+    grid-column: 1/2;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #000;
+}
+footer h2{
+    color: #fff;
+    padding: 30px 20px;
+}
+footer h2 span{
+    color: #208CFF;
+}
